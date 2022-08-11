@@ -1,0 +1,20 @@
+<h1>Hello World.</h1>
+
+<p> This is my third web page...</p>
+
+<p>My name is {{first_name}}</p>
+
+<p>{{stuff|safe}}</p>
+
+<h3>My favourite motorbike makers are:</h3>
+{% for bike in motorbike_list %}
+    {% if bike  == 'vespa' %}
+        {{bike}} <-- this is my bike.</br>
+    {% else %}
+        {{ bike }}<br/>
+    {% endif %}
+{% endfor %}
+
+<br/><br/>
+
+<h4>My scooter is a {{ motorbike_list.2}}</h4>
